@@ -1,0 +1,143 @@
+@use 'global' as *;
+
+@mixin herobtn {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+}
+.herobutton {
+    color: $prycolor;
+    position: absolute;
+    width: 206px;
+    height: 55px;
+    left: 70px;
+    top: 500px;
+    background: #FFFFFF;
+    border: white;
+    border-radius: 25px;
+    @include herobtn
+}
+
+
+// for nav bar
+@mixin navfonts {
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 19px;
+}
+
+
+.navbaritem {
+    @include navfonts
+}
+.navbutton {
+    border: 1px solid #024594;
+    @include navfonts
+}
+// end of navbar
+
+// form
+@mixin formsfont {
+    font-family: 'Rubik';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+}
+// form for i am a driver
+.input label {
+    
+    @include formsfont
+}
+.input [type=text]{
+    width: 225px;
+    height: 40px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid #024594;
+}
+
+.input [type=email] {
+    width: 500px;
+    height: 40px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid #024594;
+}
+
+.input [type=number] {
+    width: 500px;
+    height: 40px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid #024594;
+}
+.input [type=password] {
+    width: 500px;
+    height: 40px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid #024594;
+}
+.input [type=address] {
+    width: 500px;
+    height: 40px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid #024594;
+}
+.login {
+    color: $prycolor;
+}
+
+// end of form
+
+// beginning of hero
+@mixin herofont1 {
+    font-family: 'Rubik';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+}
+.backgroundimg {
+    background-image: url(../newhero.png);
+    height: 660px;
+    background-position: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.herobg{
+    
+background: rgba(2, 69, 148, 0.8);
+height: 660px;
+}
+
+.herotext {
+    position: absolute;
+    width: 410px;
+    height: 87px;
+    left: 90px;
+    top: 230px;
+}
+.herobigtext {
+    @include herofont1
+}
+.herosmalltext {
+    @include navfonts()
+}
+.herobtn {
+    border: 1px solid #024594;
+    background-color: #FFFFFF;
+    color: #024594;
+}
+
+// footer
+.footerbg {
+    background-color: #0F74FF;
+    height: 660px;
+}
+
+
+
+    

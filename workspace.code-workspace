@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\portfo"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "portfo"
+	}
+}
